@@ -119,6 +119,12 @@ img {
   display: flex;
 }
 
+.hobby-row:last-of-type p {
+  padding-right: 15%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Style last row in hobby grid */
 .hobby-row:last-of-type .hobby-row-img-wrapper {
   grid-template-columns: repeat(2, 1fr);
@@ -140,12 +146,12 @@ img {
   max-width: 60%;
   margin: 0 auto;
   margin-top: 20px;
-  font-size: 15pt
+  font-size: 15pt;
 }
 
 .about-content img {
   height: 300px;
-/*  margin-bottom: 20px; */ 
+  /*  margin-bottom: 20px; */
 }
 
 .about-content div {
@@ -162,12 +168,12 @@ img {
   align-items: center;
 }
 
-.about-content p:last-of-type{
+.about-content p:last-of-type {
   display: block;
 }
 
 .research-content {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
