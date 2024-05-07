@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navItems.forEach((item) => {
     if (currentPathname == "/") {
-      if (item.querySelector("a").href.includes("index")) {
+      if (item.querySelector("a").href.includes("/")) {
         item.classList.add("active-star");
       }
     } else {
