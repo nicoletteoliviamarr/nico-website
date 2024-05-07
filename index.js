@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const currentPathname = window.location.pathname;
 
+  if (currentPathname == "/") {
+    const indexLink = document.getElementById("index-link");
+    indexLink.classList.add("active-star");
+    return;
+  }
+
   const navItems = document.querySelectorAll("nav ul li");
 
   navItems.forEach((item) => {
-    if (currentPathname == "/") {
-      if (item.querySelector("a").href == "/") {
-        item.classList.add("active-star");
-      }
-    } else {
-      if (item.querySelector("a").href.includes(currentPage)) {
-        item.classList.add("active-star");
-      }
+    if (item.querySelector("a").href.includes(currentPage)) {
+      item.classList.add("active-star");
     }
   });
 });
