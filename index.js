@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll("nav ul li");
 
   navItems.forEach((item) => {
-    if (
-      currentPathname == "/" &&
-      item.querySelector("a").href.includes("index")
-    ) {
-      item.classList.add("active-star");
+    if (currentPathname == "/") {
+      if (item.querySelector("a").href.includes("index")) {
+        item.classList.add("active-star");
+      }
     } else {
       if (item.querySelector("a").href.includes(currentPage)) {
         item.classList.add("active-star");
